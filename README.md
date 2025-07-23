@@ -31,7 +31,30 @@ if 'horas' in comando:
 # Se a palavra "data" estiver no comando
 if 'data' in comando:
     return f'Hoje é dia: {datetime.now():%d-%m-%Y}'  # Mostra a data atual
+    
+ if 'python' in comando:
+        return 'Python é uma linguagem de programação incrível!'
+    if 'ajuda' in comando:
+        return 'Claro! Em que posso ajudar?'
+    if 'piada' in comando:
+        return 'Por que o computador foi ao médico? Porque estava com um vírus!'
+    if 'música' in comando:
+        return 'Gosto de ouvir música clássica. E tu?'
+    if 'filme' in comando:
+        return 'Adoro filmes de ficção científica!'
+    if 'desporto' in comando:
+        return 'Gosto muito de futebol. Qual é o teu time favorito?'
+    if 'clima' in comando:
+        return 'Hoje está ensolarado, ótimo para sair!'
+    if 'notícias' in comando:
+        return 'Desculpa, não tenho acesso a notícias em tempo real.'
+    if 'programar' in comando:
+        return 'Programar é uma habilidade valiosa e divertida!'
+    if 'livro' in comando:
+        return 'Estou a ler um livro sobre inteligência artificial.'
 
+    # Se nenhum dos casos acima for atendido
+    return f'Desculpa, não entendi a questão! {texto}' 
 # Se nenhum dos casos acima for atendido
 return f'Desculpa, não entendi a questão! {texto}'  # Mensagem padrão de erro
     # respostas = {
